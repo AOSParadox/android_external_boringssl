@@ -10,3 +10,4 @@ LOCAL_SRC_FILES_arm = $(linux_arm_sources)
 LOCAL_SRC_FILES_arm64 = $(linux_aarch64_sources)
 endif
 LOCAL_SRC_FILES += $(crypto_sources)
+LOCAL_SRC_FILES += $(decrepit_sources)
