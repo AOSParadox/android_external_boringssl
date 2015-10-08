@@ -454,3 +454,8 @@ win_x86_64_sources := \
   win-x86_64/crypto/sha/sha256-x86_64.asm\
   win-x86_64/crypto/sha/sha512-x86_64.asm\
 
+decrepit_sources := \
+  src/decrepit/bio/base64_bio.c\
+  src/decrepit/blowfish/blowfish.c\
+  src/decrepit/cast/cast.c\
+  src/decrepit/cast/cast_tables.c\
