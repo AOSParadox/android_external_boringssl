@@ -190,6 +190,7 @@ crypto_sources := \
   src/crypto/rsa/rsa.c\
   src/crypto/rsa/rsa_asn1.c\
   src/crypto/rsa/rsa_impl.c\
+  src/crypto/rsa/rsa_pss.c\
   src/crypto/sha/sha1.c\
   src/crypto/sha/sha256.c\
   src/crypto/sha/sha512.c\
