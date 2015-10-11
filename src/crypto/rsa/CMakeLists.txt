@@ -7,6 +7,7 @@ add_library(
 
   rsa.c
   rsa_impl.c
+  rsa_pss.c
   blinding.c
   padding.c
   rsa_asn1.c
