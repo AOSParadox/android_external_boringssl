@@ -392,6 +392,20 @@ OPENSSL_EXPORT void *RSA_get_ex_data(const RSA *r, int idx);
 
 /* Deprecated functions. */
 
+/* RSA_verify_PKCS1_PSS verifies that |EM| is a correct PSS padding of
+ * |mHash|, where |mHash| is a digest produced by |Hash|. |EM| must point to
+ * exactly |RSA_size(rsa)| bytes of data. The |sLen| argument specifies the
+ * expected salt length in bytes. If |sLen| is -1 then the salt length is the
+ * same as the hash length. If -2, then the salt length is maximal and is
+ * taken from the size of |EM|.
+ *
+ * It returns one on success or zero on error. */
+OPENSSL_EXPORT int RSA_verify_PKCS1_PSS(RSA *rsa,
+                                        const unsigned char *mHash,
+                                        const EVP_MD *Hash,
+                                        const unsigned char *EM,
+                                        int sLen);
+
 /* RSA_blinding_on returns one. */
 OPENSSL_EXPORT int RSA_blinding_on(RSA *rsa, BN_CTX *ctx);
 
