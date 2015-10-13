@@ -140,13 +140,18 @@ crypto_sources := \
   src/crypto/evp/digestsign.c\
   src/crypto/evp/evp.c\
   src/crypto/evp/evp_ctx.c\
+  src/crypto/evp/evp_enc.c\
+  src/crypto/evp/p_dec.c\
   src/crypto/evp/p_dsa_asn1.c\
   src/crypto/evp/p_ec.c\
   src/crypto/evp/p_ec_asn1.c\
+  src/crypto/evp/p_enc.c\
   src/crypto/evp/p_hmac.c\
   src/crypto/evp/p_hmac_asn1.c\
+  src/crypto/evp/p_open.c\
   src/crypto/evp/p_rsa.c\
   src/crypto/evp/p_rsa_asn1.c\
+  src/crypto/evp/p_seal.c\
   src/crypto/evp/pbkdf.c\
   src/crypto/evp/sign.c\
   src/crypto/ex_data.c\
