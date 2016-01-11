@@ -973,6 +973,7 @@ int ssl3_get_server_certificate(SSL *s);
 int ssl3_check_cert_and_algorithm(SSL *s);
 int ssl3_send_next_proto(SSL *s);
 int ssl3_send_channel_id(SSL *s);
+int ssl3_verify_server_cert(SSL *s);
 
 int dtls1_client_hello(SSL *s);
 
